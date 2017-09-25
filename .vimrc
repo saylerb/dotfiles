@@ -130,6 +130,7 @@ augroup configgroup
     autocmd!
     autocmd FileType html setlocal tabstop=2 softtabstop=3 shiftwidth=2 expandtab
     autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+    autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
     autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
     autocmd FileType groovy setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
     autocmd FileType eruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
