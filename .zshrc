@@ -9,7 +9,7 @@ em () {
   open -a /usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs $*
 }
 
-source ~/antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
 
 export JAVA_HOME=$(/usr/libexec/java_home –v 1.8)
 
