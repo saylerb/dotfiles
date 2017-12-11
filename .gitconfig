@@ -1,0 +1,5 @@
+[user]
+	email = sayler.b@gmail.com
+	name = Brian Sayler
+[core]
+	editor = /usr/bin/vim
