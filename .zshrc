@@ -51,3 +51,8 @@ alias tj='cd ~/thoughtworks/ThoughtJourney'
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
 
 export PATH=$PATH:/usr/local/bin
+
+# BEGIN ANSIBLE MANAGED BLOCK - nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# END ANSIBLE MANAGED BLOCK - nvm
