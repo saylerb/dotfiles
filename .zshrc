@@ -1,8 +1,11 @@
+source ~/.profile
+
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
 alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
-#alias emacs-gui="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs"
 alias emacs-gui='open -a /Applications/Emacs.app $1'
 
 em () {
@@ -24,7 +27,6 @@ antigen bundle lein
 antigen bundle command-not-found
 antigen bundle lukechilds/zsh-nvm
 
-
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
@@ -42,8 +44,6 @@ alias 1mod='cd ~/Dropbox/Documents/Programming/Turing/1module'
 alias 2mod='cd ~/Dropbox/Documents/Programming/Turing/2module'
 alias 3mod='cd ~/Dropbox/Documents/Programming/Turing/3module'
 alias 4mod='cd ~/Dropbox/Documents/Programming/Turing/4module'
-
-alias tj='cd ~/thoughtworks/ThoughtJourney'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
