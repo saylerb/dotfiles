@@ -1,4 +1,5 @@
-source ~/.profile
+[ -f ~/.profile ] && source ~/.profile
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
@@ -44,8 +45,6 @@ alias 1mod='cd ~/Dropbox/Documents/Programming/Turing/1module'
 alias 2mod='cd ~/Dropbox/Documents/Programming/Turing/2module'
 alias 3mod='cd ~/Dropbox/Documents/Programming/Turing/3module'
 alias 4mod='cd ~/Dropbox/Documents/Programming/Turing/4module'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
