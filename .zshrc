@@ -39,12 +39,9 @@ antigen apply
 
 # Shortcuts to Turing Folders
 
-alias prog='cd ~/Dropbox/Documents/Programming'
-alias turing='cd ~/Dropbox/Documents/Programming/Turing'
-alias 1mod='cd ~/Dropbox/Documents/Programming/Turing/1module'
-alias 2mod='cd ~/Dropbox/Documents/Programming/Turing/2module'
-alias 3mod='cd ~/Dropbox/Documents/Programming/Turing/3module'
-alias 4mod='cd ~/Dropbox/Documents/Programming/Turing/4module'
+alias cm='cd ~/workspace/thoughtworks/complaint-manager'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
