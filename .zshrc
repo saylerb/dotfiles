@@ -15,7 +15,7 @@ em () {
 
 source /usr/local/share/antigen/antigen.zsh
 
-[`/libexec/java_home > /dev/null 2>/dev/null` $? -eq 1 ] && export JAVA_HOME=$(/usr/libexec/java_home)
+[ `/libexec/java_home &> /dev/null` $? -eq 1 ] && export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
