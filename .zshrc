@@ -46,7 +46,7 @@ alias cm='cd ~/workspace/thoughtworks/complaint-manager'
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
 
-export PATH=$PATH:/usr/local/bin
+export PATH="/usr/local/bin:$PATH"
 
 # BEGIN ANSIBLE MANAGED BLOCK - nvm
 export NVM_DIR="$HOME/.nvm"
