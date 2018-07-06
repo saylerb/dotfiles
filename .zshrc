@@ -40,9 +40,8 @@ antigen theme robbyrussell
 # Tell antigen that you're done.
 antigen apply
 
-# Shortcuts to Turing Folders
-
 alias cm='cd ~/workspace/thoughtworks/complaint-manager'
+alias prime='cd ~/workspace/thoughtworks/prime'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
