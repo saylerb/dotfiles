@@ -9,6 +9,6 @@ alias migrate="migrate --path=./db/migrations"
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
-export JAVA_HOME=$(/usr/libexec/java_home –v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh 
