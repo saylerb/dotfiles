@@ -1,8 +1,8 @@
 [ -f ~/.profile ] && source ~/.profile
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
+[ -f /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
@@ -15,10 +15,7 @@ em () {
 
 source /usr/local/share/antigen/antigen.zsh
 
-# [ `/libexec/java_home &> /dev/null` $? -eq 1 ] &&
-
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
+[ `/usr/libexec/java_home &> /dev/null` $? -eq 0 ] && export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -42,8 +39,6 @@ antigen apply
 
 alias cm='cd ~/workspace/thoughtworks/complaint-manager'
 alias prime='cd ~/workspace/thoughtworks/prime'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
