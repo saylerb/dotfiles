@@ -50,7 +50,5 @@ alias prime='cd ~/workspace/thoughtworks/prime'
 
 export PATH="/usr/local/bin:$PATH"
 
-# BEGIN ANSIBLE MANAGED BLOCK - nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-# END ANSIBLE MANAGED BLOCK - nvm
