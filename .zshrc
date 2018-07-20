@@ -1,5 +1,4 @@
 [ -f ~/.profile ] && source ~/.profile
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 [ -f /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
@@ -47,3 +46,5 @@ export PATH="/usr/local/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
