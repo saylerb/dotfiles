@@ -63,3 +63,10 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.dock wvous-bl-corner -int 4
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
+###############################################################################
+# Keyboard                                                                    #
+###############################################################################
+
+# Toggle on “Use all F1, F2 as standard keys”
+defaults write -g com.apple.keyboard.fnState -bool true
+
