@@ -51,6 +51,7 @@ Plugin 'neovimhaskell/haskell-vim'
 Plugin 'elmcast/elm-vim'
 Plugin 'groovy.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'mattn/emmet-vim'
 
 "
 " The following are examples of different formats supported.
