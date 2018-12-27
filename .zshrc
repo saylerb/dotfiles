@@ -1,5 +1,4 @@
 [ -f ~/.profile ] && source ~/.profile
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 [ -f /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
@@ -37,13 +36,18 @@ antigen theme robbyrussell
 # Tell antigen that you're done.
 antigen apply
 
+# fzf must come after antigen
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 alias cm='cd ~/workspace/thoughtworks/complaint-manager'
 alias prime='cd ~/workspace/thoughtworks/prime'
+
 
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
 
 export PATH="/usr/local/bin:$PATH"
+
 
 # BEGIN ANSIBLE MANAGED BLOCK - nvm
 export NVM_DIR="$HOME/.nvm"
