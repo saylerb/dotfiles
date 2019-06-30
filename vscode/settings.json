@@ -2,7 +2,7 @@
   "prettier.requireConfig": true,
   "editor.formatOnSave": true,
   "window.zoomLevel": 0,
-  "editor.fontSize": 10,
+  "editor.fontSize": 12,
   "editor.tabSize": 2,
   "cSpell.userWords": ["isogram"],
   "editor.fontFamily": "Fira Code",
