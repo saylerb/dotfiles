@@ -18,5 +18,8 @@
   },
   "files.autoSave": "afterDelay",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.renderWhitespace": "all"
+  "editor.renderWhitespace": "all",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+ }
 }
