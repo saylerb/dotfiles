@@ -6,8 +6,8 @@ PS1='\u@\h:\w [$?]\$ '
 alias migrate="migrate --path=./db/migrations"
 
 # Source chruby stuff
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
+[ -f /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
