@@ -1,5 +1,9 @@
 [user]
-	email = sayler.b@gmail.com
 	name = Brian Sayler
+	email = sayler.b@gmail.com
+[includeIf "gitdir:~/workspace/personal/"]
+	path = ~/workspace/personal/.gitconfig
+[includeIf "gitdir:~/workspace/work/"]
+	path = ~/workspace/work/.gitconfig
 [core]
 	editor = /usr/bin/vim
