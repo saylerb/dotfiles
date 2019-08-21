@@ -46,8 +46,7 @@ alias prime='cd ~/workspace/thoughtworks/prime'
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
 
-export PATH="/usr/local/bin:$PATH"
-
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # BEGIN ANSIBLE MANAGED BLOCK - nvm
 export NVM_DIR="$HOME/.nvm"
