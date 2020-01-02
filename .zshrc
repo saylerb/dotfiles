@@ -3,6 +3,8 @@
 [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 [ -f /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
+source ~/.zsh_custom
+
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
 alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
@@ -39,10 +41,6 @@ antigen apply
 # fzf must come after antigen
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-alias cm='cd ~/workspace/thoughtworks/complaint-manager'
-alias prime='cd ~/workspace/thoughtworks/prime'
-
-
 # added by travis gem
 [ -f /Users/saylerb/.travis/travis.sh ] && source /Users/saylerb/.travis/travis.sh
 
@@ -54,3 +52,4 @@ export NVM_DIR="$HOME/.nvm"
 # END ANSIBLE MANAGED BLOCK - nvm
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
