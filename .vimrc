@@ -52,6 +52,7 @@ Plugin 'elmcast/elm-vim'
 Plugin 'groovy.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'evanleck/vim-svelte'
 
 "
 " The following are examples of different formats supported.
