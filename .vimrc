@@ -138,6 +138,7 @@ augroup configgroup
     autocmd FileType eruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
     autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab list
     autocmd FileType typescript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab list
+    autocmd FileType svelte setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab list
     autocmd FileType elm setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab list
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
@@ -190,3 +191,6 @@ set backupdir=~/.vim/.backups/backup,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim/.backups/swap,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+
+let g:svelte_indent_style = 0
+let g:svelte_indent_script = 0
