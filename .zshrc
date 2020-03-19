@@ -9,6 +9,8 @@ source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
 alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
 alias emacs-gui='open -a /Applications/Emacs.app $1'
+alias work='cd ~/workspace/work'
+alias personal='cd ~/workspace/personal'
 
 em () {
   open -a /usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs $*
