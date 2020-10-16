@@ -20,6 +20,13 @@ source /usr/local/share/antigen/antigen.zsh
 
 [ `/usr/libexec/java_home &> /dev/null` $? -eq 0 ] && export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
+jdk() {
+        version=$1
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        java -version
+}
+
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
