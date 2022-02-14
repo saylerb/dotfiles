@@ -53,6 +53,8 @@ Plugin 'groovy.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'evanleck/vim-svelte'
+Plugin 'cespare/vim-toml'
+Plugin 'fatih/vim-go'
 
 "
 " The following are examples of different formats supported.
