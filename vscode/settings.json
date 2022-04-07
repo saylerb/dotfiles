@@ -3,8 +3,19 @@
   "editor.formatOnSave": true,
   "window.zoomLevel": 0,
   "editor.fontSize": 16,
+  "window.zoomLevel": 1,
   "editor.tabSize": 2,
-  "cSpell.userWords": ["isogram"],
+  "cSpell.userWords": [
+    "Toolchains",
+    "buildscript",
+    "bytecode",
+    "exercism",
+    "groovey",
+    "initializr",
+    "isogram",
+    "mkdir",
+    "springframework"
+  ],
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "[jsonc]": {
@@ -21,5 +32,14 @@
   "editor.renderWhitespace": "all",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
- }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "editor.multiCursorModifier": "ctrlCmd",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "markdown-preview-enhanced.breakOnSingleNewLine": false
 }
