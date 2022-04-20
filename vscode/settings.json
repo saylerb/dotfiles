@@ -41,5 +41,6 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "markdown-preview-enhanced.breakOnSingleNewLine": false
+  "markdown-preview-enhanced.breakOnSingleNewLine": false,
+  "workbench.colorTheme": "Default Dark+"
 }
