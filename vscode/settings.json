@@ -1,7 +1,6 @@
 {
   "prettier.requireConfig": true,
-  "editor.formatOnSave": true,
-  "window.zoomLevel": 0,
+  "editor.formatOnSave": false,
   "editor.fontSize": 16,
   "window.zoomLevel": 1,
   "editor.tabSize": 2,
@@ -14,7 +13,12 @@
     "initializr",
     "isogram",
     "mkdir",
-    "springframework"
+    "springframework",
+    "isogram",
+    "Nonprod",
+    "Typeahead",
+    "Unmanaged",
+    "virtualservice"
   ],
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -27,7 +31,9 @@
   "[elm]": {
     "editor.formatOnSave": true
   },
-  "files.autoSave": "afterDelay",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.renderWhitespace": "all",
   "emmet.includeLanguages": {
@@ -42,5 +48,10 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "markdown-preview-enhanced.breakOnSingleNewLine": false,
-  "workbench.colorTheme": "Default Dark+"
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.autoSave": "onFocusChange"
 }
