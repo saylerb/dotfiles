@@ -1,0 +1,107 @@
+format = """
+$username\
+$hostname\
+$shlvl\
+$kubernetes\
+$custom\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$purescript\
+$python\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$env_var\
+$crystal\
+$cmd_duration\
+$line_break\
+$lua\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold blue"
+symbol = "🅰 "
+
+[kubernetes]
+symbol = "⛵ "
+disabled = false
+style = "blue bold"
+
+[python]
+pyenv_version_name = false # pyenv NOT venv
+
+[java]
+style = "#b07219"
+symbol = "Java "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+# rebase = "[✨ REBASING]"
+
+#[git_status]
+#format = '([$modified]($style) )'
+## simplier status, more like vanilla oh-my-zsh,  anything dirty is "✘"
+#modified = "✘"
+#disabled = true
+
+#[custom.dirty]
+#command = "echo '*'"
+#when = true
+#style = "fg:red"
+#shell = "zsh"
+
+[custom.defaultawsprofile]
+command = "echo $AWS_DEFAULT_PROFILE"  # shows output of command
+when = """[[ -z "${DEPLOY_ENV}" ]]"""
+format = "[$output]($style) "
