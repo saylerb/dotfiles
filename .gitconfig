@@ -1,9 +1,37 @@
 [user]
-	name = Brian Sayler
-	email = saylerb@users.noreply.github.com
+  name = Brian Sayler
+  email = saylerb@users.noreply.github.com
 [includeIf "gitdir:~/workspace/personal/"]
-	path = ~/workspace/personal/.gitconfig
+  path = ~/workspace/personal/.gitconfig
 [includeIf "gitdir:~/workspace/work/"]
-	path = ~/workspace/work/.gitconfig
+  path = ~/workspace/work/.gitconfig
 [core]
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
+[pull]
+  ff = only
+[format]
+  pretty = format:'%Cred%h%Creset -%Cblue%an <%aE>%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  st = status
+  co = checkout
+  br = branch
+  dc = "diff --cached"
+  pr = "pull --rebase"
+  ci = commit
+  type = cat-file -t
+  dump = cat-file -p
+  fullhashlog = "log --graph --abbrev-commit '--format=format:%H %C(yellow)%ci%Creset %Cgreen%an%Creset | %s'"
+  w = whatchanged
+  unpushed = !"PROJ_BRANCH=$(git symbolic-ref HEAD | sed 's|refs/heads/||') && git log origin/$PROJ_BRANCH..HEAD"
+  p = pull
+  ls = log -20
+  amend = commit --amend --no-edit
+[push]
+  default = simple
+[color]
+  ui = auto
+  pager = true
+[color "status"]
+  added = yellow
+  untracked = cyan
