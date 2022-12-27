@@ -22,7 +22,7 @@ jdk() {
   java -version
 }
 
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
