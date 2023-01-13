@@ -43,6 +43,9 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim # nvim
 export LESS=-RX
 export GPG_TTY=$(tty)
+
+setopt dotglob
+
 # Add prompt for current kubernetes context: https://github.com/jonmosco/kube-ps1
 #source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 
