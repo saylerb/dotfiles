@@ -10,6 +10,7 @@
 [core]
   editor = /usr/bin/vim
   sshCommand = ssh -i ~/.ssh/id_github_rsa
+  symlinks = false # set temporarily due to git vulnerabilities 6/19/24
 [pull]
   ff = only
 [format]
