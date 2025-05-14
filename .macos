@@ -24,6 +24,9 @@ sudo nvram SystemAudioVolume=" "
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
+# Set a blazingly fast keyboard repeat rate
+# defaults write NSGlobalDomain KeyRepeat -int 1
+# defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
