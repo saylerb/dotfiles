@@ -105,7 +105,7 @@ rebase = "[✨ REBASING]($style)"
 #style = "fg:red"
 #shell = "zsh"
 
-[custom.defaultawsprofile]
-command = "echo $AWS_DEFAULT_PROFILE"  # shows output of command
-when = """[[ -z "${DEPLOY_ENV}" ]]"""
-format = "[$output]($style) "
+[env_var]
+variable = 'AWS_SSO_PROFILE'
+#default = 'unknown profile'
+style = "bold blue"
