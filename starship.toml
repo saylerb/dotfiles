@@ -84,6 +84,10 @@ pyenv_version_name = false # pyenv NOT venv
 style = "#b07219"
 symbol = "Java "
 
+[nodejs]
+symbol = "Node "
+format = 'via [🤖 $version](bold green) '
+
 [git_state]
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
 cherry_pick = "[🍒 PICKING](bold red)"
