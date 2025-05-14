@@ -1,8 +1,5 @@
 [ -f ~/.profile ] && source ~/.profile
 
-[ -f /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
-[ -f /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
-
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
 alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
