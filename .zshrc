@@ -27,6 +27,12 @@ idea() {
   /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea $* &> /dev/null &|
 }
 
+# Dotnet
+rider() {
+  open -na "Rider.app" --args "$@"
+}
+export PATH=~/.dotnet/tools:$PATH
+
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 fpath=( ~/.zsh-functions "${fpath[@]}" )
