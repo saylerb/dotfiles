@@ -23,7 +23,9 @@ jdk() {
   java -version
 }
 
-export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
+idea() {
+  /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea $* &> /dev/null &|
+}
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
