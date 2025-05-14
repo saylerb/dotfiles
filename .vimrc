@@ -115,8 +115,8 @@ let mapleader="," " leader is commma. Must come before references to <leader>
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 " sets font
 set laststatus=2 " ensures that Powerline shows up even w/o splits
 
-" NerdTree stuff
-map <C-n> :NERDTreeToggle<CR>  NERDTree is toggled with Control-n
+"NERDTree is toggled with Control-n
+map <C-t> :NERDTreeToggle<CR>
 
 " Colors
 
