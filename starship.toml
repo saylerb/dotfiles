@@ -45,9 +45,9 @@ $nix_shell\
 $conda\
 $memory_usage\
 $aws\
+$env_var\
 $gcloud\
 $openstack\
-$env_var\
 $crystal\
 $cmd_duration\
 $line_break\
