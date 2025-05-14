@@ -15,6 +15,7 @@ em () {
   open -a /usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs $*
 }
 
+# Java
 [ `/usr/libexec/java_home &> /dev/null` $? -eq 0 ] && export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
 jdk() {
@@ -59,7 +60,6 @@ setopt dotglob
 # Add prompt for current kubernetes context: https://github.com/jonmosco/kube-ps1
 #source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 
-
 # Set prompt to include kube-ps1 and aws_ps1
 #
 # PS1='$(kube_ps1)[${AWS_DEFAULT_PROFILE:-read-only}$(aws_ps1)]'$PS1
@@ -69,6 +69,8 @@ setopt dotglob
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
+# A file to hold machine-specific configuration, that
+# does not need to be checked into git
 [ -f ~/.zsh_custom ] && source ~/.zsh_custom
 
 # Set list of themes to pick from when loading at random
@@ -152,20 +154,34 @@ setopt dotglob
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Go
 export PATH=$PATH:/$HOME/go/bin
 
-## BEGIN ANSIBLE MANAGED BLOCK - nvm
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
+# Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-# END ANSIBLE MANAGED BLOCK - nvm
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+# Zsh functions
 fpath=( ~/.zsh-functions "${fpath[@]}" )
 
+# Prompt
 eval "$(starship init zsh)"
 
-# Add kubectl completion
-source <(kubectl completion zsh | sed s/kubectl/k/g)
+# Fuzzy finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Kubernetes
+source <(kubectl completion zsh | sed s/kubectl/k/g)
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# Ruby
+[ -f "${HOMEBREW_PREFIX}/opt/chruby/share/chruby/chruby.sh" ] && source ${HOMEBREW_PREFIX}/opt/chruby/share/chruby/chruby.sh
+
+# Python
+export PATH="HOME/.pyenv/bin:HOME/.pyenv/bin:PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
 
