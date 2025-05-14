@@ -91,7 +91,7 @@ format = 'via [🤖 $version](bold green) '
 [git_state]
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
 cherry_pick = "[🍒 PICKING](bold red)"
-# rebase = "[✨ REBASING]"
+rebase = "[✨ REBASING]($style)"
 
 #[git_status]
 #format = '([$modified]($style) )'
