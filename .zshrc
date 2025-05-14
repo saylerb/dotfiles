@@ -33,8 +33,9 @@ fpath=( ~/.zsh-functions "${fpath[@]}" )
 
 #!/usr/bin/env zsh
 plugins=(
-  aws
+  gitfast
   git
+  aws
   autojump
   #zsh-autosuggestions
   zsh-syntax-highlighting
