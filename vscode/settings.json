@@ -1,8 +1,5 @@
 {
-  "prettier.requireConfig": true,
-  "editor.formatOnSave": false,
   "editor.fontSize": 16,
-  "window.zoomLevel": 1,
   "editor.tabSize": 2,
   "cSpell.userWords": [
     "Toolchains",
@@ -40,7 +37,7 @@
     "javascript": "javascriptreact"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "editor.multiCursorModifier": "ctrlCmd",
@@ -48,10 +45,16 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "markdown-preview-enhanced.breakOnSingleNewLine": false,
-  "workbench.colorTheme": "Default Dark+",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "diffEditor.ignoreTrimWhitespace": false,
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "playwright.reuseBrowser": true,
+  "prettier.requireConfig": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "window.zoomLevel": 1,
+  "html.format.extraLiners": ""
 }
