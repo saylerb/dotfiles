@@ -55,6 +55,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'evanleck/vim-svelte'
 Plugin 'cespare/vim-toml'
 Plugin 'fatih/vim-go'
+" Plugin 'mattn/vim-goimports'
 
 "
 " The following are examples of different formats supported.
@@ -175,6 +176,20 @@ let g:surround_{char2nr('=')} = "<%= \r %>"
 let g:surround_{char2nr('-')} = "<% \r %>"  " erb tag expansion for surround plugin
 
 let g:jsx_ext_required = 0 " if 0, Let vim-jsx handle JSX in `.js` files.
+
+
+" Go Stuf
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_extra_types = 1
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+autocmd FileType qf wincmd J
+
 
 let g:elm_format_autosave = 1 " let vim-elm run elm-format on autosaving
 
