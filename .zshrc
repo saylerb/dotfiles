@@ -7,6 +7,10 @@ alias emacs-gui='open -a /Applications/Emacs.app $1'
 alias work='cd ~/workspace/work'
 alias personal='cd ~/workspace/personal'
 
+__git_files () {
+    _wanted files expl 'local files' _files
+}
+
 em () {
   open -a /usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs $*
 }
