@@ -145,6 +145,7 @@ augroup configgroup
     autocmd FileType elm setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab list
     autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+    autocmd FileType c setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
     autocmd FileType go setlocal noexpandtab copyindent preserveindent softtabstop=0 tabstop=4 shiftwidth=4 list
     autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 augroup END
