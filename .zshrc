@@ -181,7 +181,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 [ -f "${HOMEBREW_PREFIX}/opt/chruby/share/chruby/chruby.sh" ] && source ${HOMEBREW_PREFIX}/opt/chruby/share/chruby/chruby.sh
 
 # Python
-export PATH="HOME/.pyenv/bin:HOME/.pyenv/bin:PATH"
+export PATH="HOME/.pyenv/bin:HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
