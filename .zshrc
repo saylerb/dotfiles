@@ -1,5 +1,6 @@
 [ -f ~/.profile ] && source ~/.profile
 
+export XDG_CONFIG_HOME="$HOME/.config"
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
 alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
@@ -157,12 +158,11 @@ setopt dotglob
 # Go
 export PATH=$PATH:/$HOME/go/bin
 
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH=~/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Node
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm, without auto-using the default version
 
 # Zsh functions
 fpath=( ~/.zsh-functions "${fpath[@]}" )
