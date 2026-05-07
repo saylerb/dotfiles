@@ -2,6 +2,8 @@
 
 export XDG_CONFIG_HOME="$HOME/.config"
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"
 alias emacs-gui='open -a /Applications/Emacs.app $1'
