@@ -10,3 +10,4 @@ alias migrate="migrate --path=./db/migrations"
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh 
 [ -f "${HOMEBREW_PREFIX}/usr/local/opt/chruby/share/chruby/chruby.sh" ] && source ${HOMEBREW_PREFIX}/usr/local/opt/chruby/share/chruby/chruby.sh
 [ -f "${HOMEBREW_PREFIX}/opt/chruby/share/chruby/chruby.sh" ] && source ${HOMEBREW_PREFIX}/opt/chruby/share/chruby/chruby.sh
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
